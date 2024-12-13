@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GeoGuessr Hotkeys",
+  "version": "1.0",
+  "description": "Adds hotkeys to GeoGuessr for better gameplay",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://game-server.geoguessr.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.geoguessr.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
